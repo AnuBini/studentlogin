@@ -1,1 +1,1 @@
-# studentlogin
+# studentdetails
