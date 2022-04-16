@@ -1,0 +1,46 @@
+{% extends 'Student/index.html' %}
+{% block body %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nomination</title>
+
+</head>
+
+<body>
+<form  method="post">
+    <h3 align="center">NOMINATION</h3>
+
+<table align="center" width="363" border="0">
+    <tr></tr>
+  <tr>
+    <td width="102">Reg.No :</td>
+    <td width="251"><label for="regno"></label>
+      <input type="text" name="regno" id="regno" /></td>
+  </tr>
+    <tr><br/></tr>
+    <tr></tr><tr></tr>
+  <tr>
+    <td>Post Name :</td>
+    <td><label for="postname"></label>
+      <select name="postname" id="postname">
+      <option>Chairperson</option>
+      <option>Vice Chairperson</option>
+      <option>General Secretary</option>
+      <option>Magazine Editor</option>
+      <option>Representative of MCA</option>
+      </select></td>
+  </tr>
+<tr></tr><tr></tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="submit" id="submit" value="Submit" /> 		        &nbsp;
+  </tr>
+</table>
+        <br/>
+
+</form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'Student/index.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw Nomination</title>
+
+</head>
+<body>
+    <form  method="post">
+        <h3 align="center">Your Nomination is Here...</h3>
+        <table  border="1" >
+        <tr><tr></tr></tr><tr></tr><tr></tr>
+        <tr>
+            <td>Candidate Id</td>
+            <td>Post name</td>
+            <td>Approval Status</td>
+        </tr>
+
+        <tr>
+            <td>{{ data['Candidate_id']}}</td>
+            <td>{{ data['Post_name']}}</td>
+            <td>{{ data['Approval_status']}}</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Withdraw"></td>
+            <td></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
+{% endblock %}
